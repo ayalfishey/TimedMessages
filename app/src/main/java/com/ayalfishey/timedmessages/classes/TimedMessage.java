@@ -14,6 +14,8 @@ import java.util.Date;
 public class TimedMessage {
 
     @PrimaryKey (autoGenerate = true)
+    int id;
+
     private String message;
     private String receiverNo;
     private Date sendDate;
@@ -39,4 +41,21 @@ public class TimedMessage {
     public void setSendDate(Date sendDate) {
         this.sendDate = sendDate;
     }
+
+
+    public String getReceiverNo() {
+        return receiverNo;
+    }
+
+    public void setReceiverNo(String receiverNo) {
+        this.receiverNo = receiverNo;
+    }
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
 }

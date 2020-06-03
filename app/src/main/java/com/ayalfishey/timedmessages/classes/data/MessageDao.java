@@ -1,6 +1,7 @@
 package com.ayalfishey.timedmessages.classes.data;
 
 import androidx.room.Dao;
+import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 
@@ -18,4 +19,7 @@ public interface MessageDao {
 
     @Insert(onConflict = REPLACE)
     void insert(TimedMessage timedMessage);
+
+    @Delete
+    void delete(TimedMessage timedMessage);
 }

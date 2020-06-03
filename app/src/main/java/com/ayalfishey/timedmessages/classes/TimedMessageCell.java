@@ -19,14 +19,17 @@ public class TimedMessageCell extends ConstraintLayout {
 
     public TimedMessageCell(Context context) {
         super(context);
+        init();
     }
 
     public TimedMessageCell(Context context, AttributeSet attrs) {
         super(context, attrs);
+        init();
     }
 
     public TimedMessageCell(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        init();
     }
 
     private void init(){
@@ -38,8 +41,12 @@ public class TimedMessageCell extends ConstraintLayout {
         delete.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                //TODO make delete button work
             }
         });
+    }
+    public void setData(int data){
+
+
     }
 }
